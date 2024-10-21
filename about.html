@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Full Page</title>
+    <style>
+        /* General Styles */
+
+        :root {
+            --bg-color:#080808;
+            --second-bg-color:#131313;
+            --text-color:white;
+            --main-color: #00ffee;
+        } 
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--bg-color);
+        }
+
+        /* Header Section */
+        .header {
+            background-color: var(--second-bg-color);
+            color: var(--main-color);
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* About Section */
+        .about-section {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: var(--second-bg-color);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 25px var(--main-color);
+            background-image: url('image.png');
+            background-size: cover; /* Cover the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; 
+        }
+
+        .about-section h2 {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        /* Image Section */
+        .about-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .about-image img{
+            position: relative;
+            justify-content: center;
+            width: 25vw;
+            border-radius: 24px 25px 24px 25px;
+            box-shadow: 0 0 25px var(--main-color);
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+        .about-image img:hover{
+            box-shadow: 0 0 25px var(--main-color),
+                        0 0 25px var(--main-color),
+                        0 0 25px var(--main-color);
+        }
+
+        /* Buttons */
+        .back-btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            box-shadow: 0 0 25px var(--main-color);
+            border-radius: 4rem;
+            font-size: 1.0rem;
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            transition: 0.3 ease-in-out;
+            cursor: pointer;
+        }
+        span {
+            color: var(--main-color);
+        }
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px var(--main-color);
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .about-section {
+                padding: 20px;
+            }
+
+            .about-section h2 {
+                font-size: 24px;
+            }
+
+            .about-section p {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width: 985px){
+            .about{
+                flex-direction: column-reverse;
+            }
+            .about h2{
+                font-size: 2.6rem;
+            }
+            .about h1{
+                text-align: left;
+            }
+            .about-section {
+                margin: 1rem 4rem;
+            }
+            .about .about-image{
+                width: 70vw;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+            .back-btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            box-shadow: 0 0 25px var(--main-color);
+            border-radius: 2rem;
+            font-size: 1.0rem;
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            transition: 0.3 ease-in-out;
+            cursor: pointer;
+        }   
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <h1>About <span>Me</span></h1>
+</div>
+
+<!-- Main About Section -->
+<div class="about-section">
+    <!-- Profile Image -->
+    <div class="about-image">
+        
+    </div>
+
+    <!-- About Content -->
+    <h2>Hello, I'm <span>Saqlain Ahmed</span></h2>
+    <p>
+        I’m an enthusiastic undergraduate student pursuing a degree in Data Science. I’ve always been fascinated by how data can be used to tell meaningful stories, solve real-world problems, and drive impactful decisions. This passion for data led me to choose this field, where I combine analytical thinking with a curiosity to uncover insights from complex datasets.
+    </p>
+    <p>
+        Through my studies and projects, Ive developed a solid foundation in key areas like Python, SQL, and statistical analysis, and I’m constantly seeking opportunities to learn more.
+    </p>
+    <p>
+        In addition to my technical skills, I enjoy spending my free time immersed in music, playing games, and engaging in competitive coding to further improve my programming abilities. Whether it’s honing my coding skills or diving into a new project, I’m always looking for ways to challenge myself creatively and technically.
+    </p>
+    <p>
+        I’m always open to collaboration, internships, or discussions about the latest trends in technology and data science!
+    </p>
+    
+    <!-- Back Button -->
+    <a href="index.html#about" class="back-btn"> Go Back</a>
+</div>
+
+</body>
+</html>
